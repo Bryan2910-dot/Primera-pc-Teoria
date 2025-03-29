@@ -1,0 +1,32 @@
+@model Primera_pc_Teoria.Models.Formulario
+
+@{
+    ViewBag.Title = "Formulario";
+}
+<h1>CAMBIO DE MODENA</h1>
+
+<form method="post" asp-action="Calculo">
+    <div class="form-group">
+        <label for="cantidad">Ingresa la cantidad</label>
+        <input type="number" class="form-control" id="cantidad" name="Cantidad" required />
+
+    </div>
+    <div class="form-group  mt-2">
+        <label for="moneda1">Moneda1</label>
+        <select class="form-control" id="moneda1" name="Moneda1" required>
+            <option value="EEUU - Dolar americano">EEUU - Dolar americano</option>
+            <option value="BRL - Real brasileño">BRL - Real brasileño</option>
+            <option value="PEN - Sol Peru">PEN - Sol Peru</option>
+        </select>
+    </div>
+    <div class="form-group  mt-2"></div>
+        <label for="moneda2">Moneda2 </label>
+        <select class="form-control" id="moneda2" name="Moneda2" required>
+            <option value="EEUU - Dolar americano">EEUU - Dolar americano</option>
+            <option value="BRL - Real brasileño">BRL - Real brasileño</option>
+            <option value="PEN - Sol Peru">PEN - Sol Peru</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Calcular</button>
+</form>
+<h1>@ViewData["Resultado"]</h1>

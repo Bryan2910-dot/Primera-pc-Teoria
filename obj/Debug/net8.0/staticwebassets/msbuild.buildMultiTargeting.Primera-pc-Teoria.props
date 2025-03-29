@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Primera-pc-Teoria.props" />
+</Project>
